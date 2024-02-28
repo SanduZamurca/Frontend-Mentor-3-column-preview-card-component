@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/background-image.jpg);
+}
+article {
+  width: 1440px;
+  background-color: hsl(0, 0%, 95%);
+  box-shadow: 5px 5px 20px 12px rgba(0, 0, 0, 0.192);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.car {
+  width: 215px;
+  background-color: red;
+  /* border: solid black 1px; */
+  text-align: center;
+  line-height: 1.5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 52px 52px;
+}
+
+.car-sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+.car-suv {
+  background-color: hsl(184, 100%, 22%);
+}
+.car-luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.type-car {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: Big Shoulders Display;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 95%);
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.description {
+  font-size: 15px;
+  text-align: left;
+  font-family: Lexend Deca;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 75px;
+  padding-right: 5px;
+}
+button {
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+.button-Sedans {
+  color: hsl(31, 77%, 52%);
+  border: hsl(31, 77%, 52%) 1px;
+}
+.button-Sedans:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: solid hsl(0, 0%, 95%) 1px;
+  cursor: pointer;
+}
+.button-Suvs {
+  color: hsl(184, 100%, 22%);
+  border: hsl(184, 100%, 22%) 1px;
+}
+.button-Suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: solid hsl(0, 0%, 95%) 1px;
+  cursor: pointer;
+}
+.button-Luxury {
+  color: hsl(179, 100%, 13%);
+  border: hsl(179, 100%, 13%) 1px;
+}
+.button-Luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: solid hsl(0, 0%, 95%) 1px;
+  cursor: pointer;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+@media only screen and (max-width: 430px) {
+  article {
+    width: 375px;
+    height: auto;
+    background-color: hsl(0, 0%, 95%);
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5;
+    font-family: Lexend Deca;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 25px;
+    padding-right: 5px;
+  }
+  .car {
+    padding: 40px;
+  }
+  .car-sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+  }
+
+  .car-luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+  }
+}
