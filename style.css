@@ -136,4 +136,10 @@ button {
     background-color: hsl(179, 100%, 13%);
     border-radius: 0 0 10px 10px;
   }
+   html,
+  body {
+    display: border-box;
+    margin-top: 200px;
+    background-color: hsl(0, 0%, 95%);
+  }
 }
